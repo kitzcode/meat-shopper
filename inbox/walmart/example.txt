@@ -1,0 +1,7 @@
+# Walmart has NO weekly circular. These are Rollback prices you copy in by hand
+# from the app or the "Weekly Circular Ads" page. See ../../SOURCES.md.
+# url: https://www.walmart.com/c/kp/weekly-circular-ads
+Marketside Boneless Skinless Chicken Thighs $2.97/lb
+All Natural 93% Lean Ground Beef $6.48/lb
+Fresh Boneless Pork Chops family pack $2.64/lb
+Atlantic Salmon Portions 32 oz $13.97

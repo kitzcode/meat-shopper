@@ -1,0 +1,9 @@
+# Example flyer paste for Stop & Shop. Delete or replace with your real flyer.
+# valid: 8/21-8/27
+# url: https://stopandshop.com/savings/weekly-ad
+Boneless Skinless Chicken Breast 2/$7 3 lb pkg
+Boneless Pork Chops $3.99/lb
+Ground Beef 80% Lean $4.99/lb
+Salmon Burgers 12 oz $6.99
+Wild Cod Loin $9.49/lb
+Boneless Chicken Thighs $4.29 each

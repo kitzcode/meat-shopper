@@ -1,0 +1,13 @@
+{
+  "source_url": "https://www.bigy.com/Circular",
+  "valid_from": "8/22",
+  "valid_to": "8/28",
+  "deals": [
+    {"title": "Boneless Skinless Chicken Thighs", "price_text": "$3.99/lb", "pack_text": "family pack"},
+    {"title": "Pork Loin Roast", "price_text": "$2.99", "pack_text": "per lb"},
+    {"title": "Ground Beef 93% Lean", "price_text": "$5.49", "pack_text": "1 lb pkg"},
+    {"title": "Fresh Salmon Fillet", "price_text": "$12.99", "pack_text": "per lb"},
+    {"title": "Top Sirloin Steak", "price_text": "$7.99/lb"},
+    {"title": "Boneless Skinless Chicken Breast", "price_text": "$4.99 each"}
+  ]
+}

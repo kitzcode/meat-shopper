@@ -1,0 +1,2 @@
+# Core dependency (required). Free, no paid APIs.
+PyYAML>=6.0

@@ -1,0 +1,1047 @@
+{
+  "week_label": "2026-08-22",
+  "location_label": "06001",
+  "groups": [
+    {
+      "key": "chicken_thighs_bnsl_sknls",
+      "label": "Boneless skinless chicken thighs",
+      "threshold_lb": 3.49,
+      "qualifying": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "shoprite",
+              "store_name": "ShopRite",
+              "title": "Boneless Skinless Chicken Thighs family pack $2.29/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.shoprite.com/circulars",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Boneless Skinless Chicken Thighs family pack $2.29/lb"
+            },
+            "price_per_lb": 2.29,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$2.29/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "chicken_thighs_bnsl_sknls",
+          "item_label": "Boneless skinless chicken thighs",
+          "threshold_lb": 3.49,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "walmart",
+              "store_name": "Walmart",
+              "title": "Marketside Boneless Skinless Chicken Thighs $2.97/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.walmart.com/c/kp/weekly-circular-ads",
+              "valid_from": "",
+              "valid_to": "",
+              "source_kind": "paste",
+              "raw_line": "Marketside Boneless Skinless Chicken Thighs $2.97/lb"
+            },
+            "price_per_lb": 2.97,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$2.97/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "chicken_thighs_bnsl_sknls",
+          "item_label": "Boneless skinless chicken thighs",
+          "threshold_lb": 3.49,
+          "status": "qualifying",
+          "review_reason": null
+        }
+      ],
+      "over_threshold": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "aldi",
+              "store_name": "Aldi",
+              "title": "Never Any Boneless Skinless Chicken Thighs $3.79/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.aldi.us/weekly-specials/",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Never Any Boneless Skinless Chicken Thighs $3.79/lb"
+            },
+            "price_per_lb": 3.79,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$3.79/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "chicken_thighs_bnsl_sknls",
+          "item_label": "Boneless skinless chicken thighs",
+          "threshold_lb": 3.49,
+          "status": "over",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "big_y",
+              "store_name": "Big Y",
+              "title": "Boneless Skinless Chicken Thighs",
+              "price_text": "$3.99/lb",
+              "pack_text": "family pack",
+              "promo_text": "",
+              "source_url": "https://www.bigy.com/Circular",
+              "valid_from": "8/22",
+              "valid_to": "8/28",
+              "source_kind": "paste-json",
+              "raw_line": "{\"title\": \"Boneless Skinless Chicken Thighs\", \"price_text\": \"$3.99/lb\", \"pack_text\": \"family pack\"}"
+            },
+            "price_per_lb": 3.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$3.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "chicken_thighs_bnsl_sknls",
+          "item_label": "Boneless skinless chicken thighs",
+          "threshold_lb": 3.49,
+          "status": "over",
+          "review_reason": null
+        }
+      ],
+      "best": {
+        "normalized": {
+          "raw": {
+            "store_id": "shoprite",
+            "store_name": "ShopRite",
+            "title": "Boneless Skinless Chicken Thighs family pack $2.29/lb",
+            "price_text": "",
+            "pack_text": "",
+            "promo_text": "",
+            "source_url": "https://www.shoprite.com/circulars",
+            "valid_from": "8/20",
+            "valid_to": "8/26",
+            "source_kind": "paste",
+            "raw_line": "Boneless Skinless Chicken Thighs family pack $2.29/lb"
+          },
+          "price_per_lb": 2.29,
+          "unit_price": null,
+          "weight_lb": null,
+          "basis": "$2.29/lb as printed",
+          "confident": true,
+          "review_reason": null,
+          "lean_pct": null
+        },
+        "item_key": "chicken_thighs_bnsl_sknls",
+        "item_label": "Boneless skinless chicken thighs",
+        "threshold_lb": 3.49,
+        "status": "qualifying",
+        "review_reason": null
+      }
+    },
+    {
+      "key": "chicken_breast_bnsl_sknls",
+      "label": "Chicken breast (boneless skinless)",
+      "threshold_lb": 2.99,
+      "qualifying": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "stop_and_shop",
+              "store_name": "Stop & Shop",
+              "title": "Boneless Skinless Chicken Breast 2/$7 3 lb pkg",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://stopandshop.com/savings/weekly-ad",
+              "valid_from": "8/21",
+              "valid_to": "8/27",
+              "source_kind": "paste",
+              "raw_line": "Boneless Skinless Chicken Breast 2/$7 3 lb pkg"
+            },
+            "price_per_lb": 1.17,
+            "unit_price": 3.5,
+            "weight_lb": 3.0,
+            "basis": "2 for $7.00 = $3.50 each, / 3.00 lb pkg",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "chicken_breast_bnsl_sknls",
+          "item_label": "Chicken breast (boneless skinless)",
+          "threshold_lb": 2.99,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "aldi",
+              "store_name": "Aldi",
+              "title": "Fresh Boneless Skinless Chicken Breast $1.99/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.aldi.us/weekly-specials/",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Fresh Boneless Skinless Chicken Breast $1.99/lb"
+            },
+            "price_per_lb": 1.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$1.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "chicken_breast_bnsl_sknls",
+          "item_label": "Chicken breast (boneless skinless)",
+          "threshold_lb": 2.99,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "shoprite",
+              "store_name": "ShopRite",
+              "title": "Boneless Skinless Chicken Breast $2.49/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.shoprite.com/circulars",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Boneless Skinless Chicken Breast $2.49/lb"
+            },
+            "price_per_lb": 2.49,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$2.49/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "chicken_breast_bnsl_sknls",
+          "item_label": "Chicken breast (boneless skinless)",
+          "threshold_lb": 2.99,
+          "status": "qualifying",
+          "review_reason": null
+        }
+      ],
+      "over_threshold": [],
+      "best": {
+        "normalized": {
+          "raw": {
+            "store_id": "stop_and_shop",
+            "store_name": "Stop & Shop",
+            "title": "Boneless Skinless Chicken Breast 2/$7 3 lb pkg",
+            "price_text": "",
+            "pack_text": "",
+            "promo_text": "",
+            "source_url": "https://stopandshop.com/savings/weekly-ad",
+            "valid_from": "8/21",
+            "valid_to": "8/27",
+            "source_kind": "paste",
+            "raw_line": "Boneless Skinless Chicken Breast 2/$7 3 lb pkg"
+          },
+          "price_per_lb": 1.17,
+          "unit_price": 3.5,
+          "weight_lb": 3.0,
+          "basis": "2 for $7.00 = $3.50 each, / 3.00 lb pkg",
+          "confident": true,
+          "review_reason": null,
+          "lean_pct": null
+        },
+        "item_key": "chicken_breast_bnsl_sknls",
+        "item_label": "Chicken breast (boneless skinless)",
+        "threshold_lb": 2.99,
+        "status": "qualifying",
+        "review_reason": null
+      }
+    },
+    {
+      "key": "ground_beef_93",
+      "label": "Ground beef, 93%+ lean",
+      "threshold_lb": 8.49,
+      "qualifying": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "big_y",
+              "store_name": "Big Y",
+              "title": "Ground Beef 93% Lean",
+              "price_text": "$5.49",
+              "pack_text": "1 lb pkg",
+              "promo_text": "",
+              "source_url": "https://www.bigy.com/Circular",
+              "valid_from": "8/22",
+              "valid_to": "8/28",
+              "source_kind": "paste-json",
+              "raw_line": "{\"title\": \"Ground Beef 93% Lean\", \"price_text\": \"$5.49\", \"pack_text\": \"1 lb pkg\"}"
+            },
+            "price_per_lb": 5.49,
+            "unit_price": 5.49,
+            "weight_lb": 1.0,
+            "basis": "$5.49, / 1.00 lb pkg",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": 93
+          },
+          "item_key": "ground_beef_93",
+          "item_label": "Ground beef, 93%+ lean",
+          "threshold_lb": 8.49,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "aldi",
+              "store_name": "Aldi",
+              "title": "Ground Beef 93% Lean $5.99/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.aldi.us/weekly-specials/",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Ground Beef 93% Lean $5.99/lb"
+            },
+            "price_per_lb": 5.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$5.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": 93
+          },
+          "item_key": "ground_beef_93",
+          "item_label": "Ground beef, 93%+ lean",
+          "threshold_lb": 8.49,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "walmart",
+              "store_name": "Walmart",
+              "title": "All Natural 93% Lean Ground Beef $6.48/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.walmart.com/c/kp/weekly-circular-ads",
+              "valid_from": "",
+              "valid_to": "",
+              "source_kind": "paste",
+              "raw_line": "All Natural 93% Lean Ground Beef $6.48/lb"
+            },
+            "price_per_lb": 6.48,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$6.48/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": 93
+          },
+          "item_key": "ground_beef_93",
+          "item_label": "Ground beef, 93%+ lean",
+          "threshold_lb": 8.49,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "shoprite",
+              "store_name": "ShopRite",
+              "title": "93% Lean Ground Beef $6.99/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.shoprite.com/circulars",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "93% Lean Ground Beef $6.99/lb"
+            },
+            "price_per_lb": 6.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$6.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": 93
+          },
+          "item_key": "ground_beef_93",
+          "item_label": "Ground beef, 93%+ lean",
+          "threshold_lb": 8.49,
+          "status": "qualifying",
+          "review_reason": null
+        }
+      ],
+      "over_threshold": [],
+      "best": {
+        "normalized": {
+          "raw": {
+            "store_id": "big_y",
+            "store_name": "Big Y",
+            "title": "Ground Beef 93% Lean",
+            "price_text": "$5.49",
+            "pack_text": "1 lb pkg",
+            "promo_text": "",
+            "source_url": "https://www.bigy.com/Circular",
+            "valid_from": "8/22",
+            "valid_to": "8/28",
+            "source_kind": "paste-json",
+            "raw_line": "{\"title\": \"Ground Beef 93% Lean\", \"price_text\": \"$5.49\", \"pack_text\": \"1 lb pkg\"}"
+          },
+          "price_per_lb": 5.49,
+          "unit_price": 5.49,
+          "weight_lb": 1.0,
+          "basis": "$5.49, / 1.00 lb pkg",
+          "confident": true,
+          "review_reason": null,
+          "lean_pct": 93
+        },
+        "item_key": "ground_beef_93",
+        "item_label": "Ground beef, 93%+ lean",
+        "threshold_lb": 8.49,
+        "status": "qualifying",
+        "review_reason": null
+      }
+    },
+    {
+      "key": "pork_chops_bnsl",
+      "label": "Boneless pork chops",
+      "threshold_lb": 4.99,
+      "qualifying": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "walmart",
+              "store_name": "Walmart",
+              "title": "Fresh Boneless Pork Chops family pack $2.64/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.walmart.com/c/kp/weekly-circular-ads",
+              "valid_from": "",
+              "valid_to": "",
+              "source_kind": "paste",
+              "raw_line": "Fresh Boneless Pork Chops family pack $2.64/lb"
+            },
+            "price_per_lb": 2.64,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$2.64/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "pork_chops_bnsl",
+          "item_label": "Boneless pork chops",
+          "threshold_lb": 4.99,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "aldi",
+              "store_name": "Aldi",
+              "title": "Boneless Pork Chops $2.79/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.aldi.us/weekly-specials/",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Boneless Pork Chops $2.79/lb"
+            },
+            "price_per_lb": 2.79,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$2.79/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "pork_chops_bnsl",
+          "item_label": "Boneless pork chops",
+          "threshold_lb": 4.99,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "stop_and_shop",
+              "store_name": "Stop & Shop",
+              "title": "Boneless Pork Chops $3.99/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://stopandshop.com/savings/weekly-ad",
+              "valid_from": "8/21",
+              "valid_to": "8/27",
+              "source_kind": "paste",
+              "raw_line": "Boneless Pork Chops $3.99/lb"
+            },
+            "price_per_lb": 3.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$3.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "pork_chops_bnsl",
+          "item_label": "Boneless pork chops",
+          "threshold_lb": 4.99,
+          "status": "qualifying",
+          "review_reason": null
+        }
+      ],
+      "over_threshold": [],
+      "best": {
+        "normalized": {
+          "raw": {
+            "store_id": "walmart",
+            "store_name": "Walmart",
+            "title": "Fresh Boneless Pork Chops family pack $2.64/lb",
+            "price_text": "",
+            "pack_text": "",
+            "promo_text": "",
+            "source_url": "https://www.walmart.com/c/kp/weekly-circular-ads",
+            "valid_from": "",
+            "valid_to": "",
+            "source_kind": "paste",
+            "raw_line": "Fresh Boneless Pork Chops family pack $2.64/lb"
+          },
+          "price_per_lb": 2.64,
+          "unit_price": null,
+          "weight_lb": null,
+          "basis": "$2.64/lb as printed",
+          "confident": true,
+          "review_reason": null,
+          "lean_pct": null
+        },
+        "item_key": "pork_chops_bnsl",
+        "item_label": "Boneless pork chops",
+        "threshold_lb": 4.99,
+        "status": "qualifying",
+        "review_reason": null
+      }
+    },
+    {
+      "key": "pork_loin",
+      "label": "Pork loin",
+      "threshold_lb": 3.99,
+      "qualifying": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "big_y",
+              "store_name": "Big Y",
+              "title": "Pork Loin Roast",
+              "price_text": "$2.99",
+              "pack_text": "per lb",
+              "promo_text": "",
+              "source_url": "https://www.bigy.com/Circular",
+              "valid_from": "8/22",
+              "valid_to": "8/28",
+              "source_kind": "paste-json",
+              "raw_line": "{\"title\": \"Pork Loin Roast\", \"price_text\": \"$2.99\", \"pack_text\": \"per lb\"}"
+            },
+            "price_per_lb": 2.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$2.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "pork_loin",
+          "item_label": "Pork loin",
+          "threshold_lb": 3.99,
+          "status": "qualifying",
+          "review_reason": null
+        }
+      ],
+      "over_threshold": [],
+      "best": {
+        "normalized": {
+          "raw": {
+            "store_id": "big_y",
+            "store_name": "Big Y",
+            "title": "Pork Loin Roast",
+            "price_text": "$2.99",
+            "pack_text": "per lb",
+            "promo_text": "",
+            "source_url": "https://www.bigy.com/Circular",
+            "valid_from": "8/22",
+            "valid_to": "8/28",
+            "source_kind": "paste-json",
+            "raw_line": "{\"title\": \"Pork Loin Roast\", \"price_text\": \"$2.99\", \"pack_text\": \"per lb\"}"
+          },
+          "price_per_lb": 2.99,
+          "unit_price": null,
+          "weight_lb": null,
+          "basis": "$2.99/lb as printed",
+          "confident": true,
+          "review_reason": null,
+          "lean_pct": null
+        },
+        "item_key": "pork_loin",
+        "item_label": "Pork loin",
+        "threshold_lb": 3.99,
+        "status": "qualifying",
+        "review_reason": null
+      }
+    },
+    {
+      "key": "salmon",
+      "label": "Salmon",
+      "threshold_lb": 9.99,
+      "qualifying": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "walmart",
+              "store_name": "Walmart",
+              "title": "Atlantic Salmon Portions 32 oz $13.97",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.walmart.com/c/kp/weekly-circular-ads",
+              "valid_from": "",
+              "valid_to": "",
+              "source_kind": "paste",
+              "raw_line": "Atlantic Salmon Portions 32 oz $13.97"
+            },
+            "price_per_lb": 6.99,
+            "unit_price": 13.97,
+            "weight_lb": 2.0,
+            "basis": "$13.97, / 2.00 lb pkg",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "salmon",
+          "item_label": "Salmon",
+          "threshold_lb": 9.99,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "aldi",
+              "store_name": "Aldi",
+              "title": "Frozen Salmon Fillets $8.49/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.aldi.us/weekly-specials/",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Frozen Salmon Fillets $8.49/lb"
+            },
+            "price_per_lb": 8.49,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$8.49/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "salmon",
+          "item_label": "Salmon",
+          "threshold_lb": 9.99,
+          "status": "qualifying",
+          "review_reason": null
+        }
+      ],
+      "over_threshold": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "shoprite",
+              "store_name": "ShopRite",
+              "title": "Fresh Atlantic Salmon Fillet $10.99/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.shoprite.com/circulars",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Fresh Atlantic Salmon Fillet $10.99/lb"
+            },
+            "price_per_lb": 10.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$10.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "salmon",
+          "item_label": "Salmon",
+          "threshold_lb": 9.99,
+          "status": "over",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "big_y",
+              "store_name": "Big Y",
+              "title": "Fresh Salmon Fillet",
+              "price_text": "$12.99",
+              "pack_text": "per lb",
+              "promo_text": "",
+              "source_url": "https://www.bigy.com/Circular",
+              "valid_from": "8/22",
+              "valid_to": "8/28",
+              "source_kind": "paste-json",
+              "raw_line": "{\"title\": \"Fresh Salmon Fillet\", \"price_text\": \"$12.99\", \"pack_text\": \"per lb\"}"
+            },
+            "price_per_lb": 12.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$12.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "salmon",
+          "item_label": "Salmon",
+          "threshold_lb": 9.99,
+          "status": "over",
+          "review_reason": null
+        }
+      ],
+      "best": {
+        "normalized": {
+          "raw": {
+            "store_id": "walmart",
+            "store_name": "Walmart",
+            "title": "Atlantic Salmon Portions 32 oz $13.97",
+            "price_text": "",
+            "pack_text": "",
+            "promo_text": "",
+            "source_url": "https://www.walmart.com/c/kp/weekly-circular-ads",
+            "valid_from": "",
+            "valid_to": "",
+            "source_kind": "paste",
+            "raw_line": "Atlantic Salmon Portions 32 oz $13.97"
+          },
+          "price_per_lb": 6.99,
+          "unit_price": 13.97,
+          "weight_lb": 2.0,
+          "basis": "$13.97, / 2.00 lb pkg",
+          "confident": true,
+          "review_reason": null,
+          "lean_pct": null
+        },
+        "item_key": "salmon",
+        "item_label": "Salmon",
+        "threshold_lb": 9.99,
+        "status": "qualifying",
+        "review_reason": null
+      }
+    },
+    {
+      "key": "cod",
+      "label": "Cod",
+      "threshold_lb": 9.99,
+      "qualifying": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "shoprite",
+              "store_name": "ShopRite",
+              "title": "Wild Caught Cod Fillet $8.99/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.shoprite.com/circulars",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Wild Caught Cod Fillet $8.99/lb"
+            },
+            "price_per_lb": 8.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$8.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "cod",
+          "item_label": "Cod",
+          "threshold_lb": 9.99,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "stop_and_shop",
+              "store_name": "Stop & Shop",
+              "title": "Wild Cod Loin $9.49/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://stopandshop.com/savings/weekly-ad",
+              "valid_from": "8/21",
+              "valid_to": "8/27",
+              "source_kind": "paste",
+              "raw_line": "Wild Cod Loin $9.49/lb"
+            },
+            "price_per_lb": 9.49,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$9.49/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "cod",
+          "item_label": "Cod",
+          "threshold_lb": 9.99,
+          "status": "qualifying",
+          "review_reason": null
+        }
+      ],
+      "over_threshold": [],
+      "best": {
+        "normalized": {
+          "raw": {
+            "store_id": "shoprite",
+            "store_name": "ShopRite",
+            "title": "Wild Caught Cod Fillet $8.99/lb",
+            "price_text": "",
+            "pack_text": "",
+            "promo_text": "",
+            "source_url": "https://www.shoprite.com/circulars",
+            "valid_from": "8/20",
+            "valid_to": "8/26",
+            "source_kind": "paste",
+            "raw_line": "Wild Caught Cod Fillet $8.99/lb"
+          },
+          "price_per_lb": 8.99,
+          "unit_price": null,
+          "weight_lb": null,
+          "basis": "$8.99/lb as printed",
+          "confident": true,
+          "review_reason": null,
+          "lean_pct": null
+        },
+        "item_key": "cod",
+        "item_label": "Cod",
+        "threshold_lb": 9.99,
+        "status": "qualifying",
+        "review_reason": null
+      }
+    },
+    {
+      "key": "sirloin_steak",
+      "label": "Sirloin steak",
+      "threshold_lb": 12.99,
+      "qualifying": [
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "big_y",
+              "store_name": "Big Y",
+              "title": "Top Sirloin Steak",
+              "price_text": "$7.99/lb",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.bigy.com/Circular",
+              "valid_from": "8/22",
+              "valid_to": "8/28",
+              "source_kind": "paste-json",
+              "raw_line": "{\"title\": \"Top Sirloin Steak\", \"price_text\": \"$7.99/lb\"}"
+            },
+            "price_per_lb": 7.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$7.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "sirloin_steak",
+          "item_label": "Sirloin steak",
+          "threshold_lb": 12.99,
+          "status": "qualifying",
+          "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "shoprite",
+              "store_name": "ShopRite",
+              "title": "Sirloin Steak $9.99/lb",
+              "price_text": "",
+              "pack_text": "",
+              "promo_text": "",
+              "source_url": "https://www.shoprite.com/circulars",
+              "valid_from": "8/20",
+              "valid_to": "8/26",
+              "source_kind": "paste",
+              "raw_line": "Sirloin Steak $9.99/lb"
+            },
+            "price_per_lb": 9.99,
+            "unit_price": null,
+            "weight_lb": null,
+            "basis": "$9.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "sirloin_steak",
+          "item_label": "Sirloin steak",
+          "threshold_lb": 12.99,
+          "status": "qualifying",
+          "review_reason": null
+        }
+      ],
+      "over_threshold": [],
+      "best": {
+        "normalized": {
+          "raw": {
+            "store_id": "big_y",
+            "store_name": "Big Y",
+            "title": "Top Sirloin Steak",
+            "price_text": "$7.99/lb",
+            "pack_text": "",
+            "promo_text": "",
+            "source_url": "https://www.bigy.com/Circular",
+            "valid_from": "8/22",
+            "valid_to": "8/28",
+            "source_kind": "paste-json",
+            "raw_line": "{\"title\": \"Top Sirloin Steak\", \"price_text\": \"$7.99/lb\"}"
+          },
+          "price_per_lb": 7.99,
+          "unit_price": null,
+          "weight_lb": null,
+          "basis": "$7.99/lb as printed",
+          "confident": true,
+          "review_reason": null,
+          "lean_pct": null
+        },
+        "item_key": "sirloin_steak",
+        "item_label": "Sirloin steak",
+        "threshold_lb": 12.99,
+        "status": "qualifying",
+        "review_reason": null
+      }
+    }
+  ],
+  "review_items": [
+    {
+      "normalized": {
+        "raw": {
+          "store_id": "big_y",
+          "store_name": "Big Y",
+          "title": "Boneless Skinless Chicken Breast",
+          "price_text": "$4.99 each",
+          "pack_text": "",
+          "promo_text": "",
+          "source_url": "https://www.bigy.com/Circular",
+          "valid_from": "8/22",
+          "valid_to": "8/28",
+          "source_kind": "paste-json",
+          "raw_line": "{\"title\": \"Boneless Skinless Chicken Breast\", \"price_text\": \"$4.99 each\"}"
+        },
+        "price_per_lb": null,
+        "unit_price": null,
+        "weight_lb": null,
+        "basis": "",
+        "confident": false,
+        "review_reason": "unit unclear (no weight to convert to $/lb)",
+        "lean_pct": null
+      },
+      "item_key": "chicken_breast_bnsl_sknls",
+      "item_label": "Chicken breast (boneless skinless)",
+      "threshold_lb": 2.99,
+      "status": "review",
+      "review_reason": "unit unclear (no weight to convert to $/lb)"
+    }
+  ],
+  "store_statuses": [
+    {
+      "store_id": "shoprite",
+      "store_name": "ShopRite",
+      "ok": true,
+      "deal_count": 7,
+      "note": "read example.txt (7)"
+    },
+    {
+      "store_id": "stop_and_shop",
+      "store_name": "Stop & Shop",
+      "ok": true,
+      "deal_count": 6,
+      "note": "read example.txt (6)"
+    },
+    {
+      "store_id": "big_y",
+      "store_name": "Big Y",
+      "ok": true,
+      "deal_count": 6,
+      "note": "read example.json (6)"
+    },
+    {
+      "store_id": "aldi",
+      "store_name": "Aldi",
+      "ok": true,
+      "deal_count": 5,
+      "note": "read example.txt (5)"
+    },
+    {
+      "store_id": "walmart",
+      "store_name": "Walmart",
+      "ok": true,
+      "deal_count": 4,
+      "note": "read example.txt (4)"
+    },
+    {
+      "store_id": "fresh_market",
+      "store_name": "The Fresh Market",
+      "ok": true,
+      "deal_count": 0,
+      "note": "inbox empty; drop a flyer .txt/.json/.png/.pdf here"
+    }
+  ],
+  "generated_at": "2026-08-22 21:45 UTC"
+}

@@ -1,0 +1,157 @@
+# =============================================================================
+# Meat Shopper config. This is the ONE file you edit to tune the digest.
+# Everything here is yours to change. No ZIP or store is hardcoded in the code.
+# =============================================================================
+
+# Your location. Used to pick the right store flyers/zone. Set your own.
+# postal_code drives store selection where an automated source supports it;
+# the paste-fallback ignores it (you paste the flyer you already have).
+location:
+  postal_code: "06001"          # <-- CHANGE ME (5-digit US ZIP or postal code)
+  country: "US"
+  # Optional label just for the digest header, e.g. "Farmington, CT area".
+  label: ""
+
+# -----------------------------------------------------------------------------
+# Watch list. Each item has:
+#   key            stable id (do not reuse across items)
+#   label          how it appears in the digest
+#   threshold_lb   only deals at or BELOW this $/lb are surfaced as "qualifying"
+#   include        words/phrases that must appear (any one) to be a candidate
+#   exclude        words/phrases that disqualify (seasoning, soup, pet food...)
+#   rule           optional special rule handled in code:
+#                    - min_lean: 93   (ground beef: needs stated lean% >= 93)
+#                    - prefer_plain_cut  (fish: demote breaded/prepared)
+#                    - exact_cut         (steak: must be the named cut)
+# Thresholds below are the owner-researched starting points. Tune freely.
+# -----------------------------------------------------------------------------
+watchlist:
+  - key: chicken_thighs_bnsl_sknls
+    label: "Boneless skinless chicken thighs"
+    threshold_lb: 3.49
+    include: ["chicken thigh", "chicken thighs"]
+    require_all: ["boneless", "skinless"]   # both words must be present
+    exclude: ["seasoning", "seasoned", "marinade", "marinated", "soup", "flavor",
+              "dog", "cat", "pet", "broth", "bone-in", "bone in", "with bone"]
+
+  - key: chicken_breast_bnsl_sknls
+    label: "Chicken breast (boneless skinless)"
+    threshold_lb: 2.99
+    include: ["chicken breast", "chicken breasts"]
+    require_all: ["boneless", "skinless"]
+    exclude: ["seasoning", "seasoned", "marinade", "marinated", "soup", "flavor",
+              "dog", "cat", "pet", "broth", "breaded", "nugget", "tender",
+              "cream of chicken", "bone-in", "bone in"]
+
+  - key: ground_beef_93
+    label: "Ground beef, 93%+ lean"
+    threshold_lb: 8.49
+    include: ["ground beef", "ground chuck", "ground round", "ground sirloin",
+              "lean ground beef", "hamburger"]
+    exclude: ["seasoning", "seasoned", "soup", "dog", "cat", "pet", "meatball",
+              "patties", "patty", "taco", "sloppy"]
+    rule:
+      min_lean: 93            # only qualifies if the deal states >= 93% lean
+
+  - key: pork_chops_bnsl
+    label: "Boneless pork chops"
+    threshold_lb: 4.99
+    include: ["pork chop", "pork chops"]
+    require_all: ["boneless"]
+    exclude: ["seasoning", "seasoned", "marinated", "stuffed", "breaded",
+              "soup", "dog", "cat", "pet", "bone-in", "bone in"]
+
+  - key: pork_loin
+    label: "Pork loin"
+    threshold_lb: 3.99
+    include: ["pork loin", "pork tenderloin", "loin roast"]
+    exclude: ["seasoning", "seasoned", "marinated", "stuffed", "smoked",
+              "soup", "dog", "cat", "pet", "pork chop"]  # chops handled above
+
+  - key: salmon
+    label: "Salmon"
+    threshold_lb: 9.99
+    include: ["salmon"]
+    exclude: ["seasoning", "seasoned", "burger", "cake", "cakes", "breaded",
+              "smoked", "lox", "jerky", "dog", "cat", "pet", "spread", "dip"]
+    rule:
+      prefer_plain_cut: true   # breaded/prepared -> review, not ranked
+
+  - key: cod
+    label: "Cod"
+    threshold_lb: 9.99
+    include: ["cod", "cod fillet", "cod fillets", "cod loin"]
+    exclude: ["seasoning", "breaded", "battered", "sticks", "cake", "cakes",
+              "dog", "cat", "pet", "cape cod"]   # "cape cod" is not the fish
+    rule:
+      prefer_plain_cut: true
+
+  - key: sirloin_steak
+    label: "Sirloin steak"
+    threshold_lb: 12.99
+    include: ["sirloin steak", "top sirloin", "sirloin"]
+    exclude: ["seasoning", "seasoned", "marinated", "ground", "tip roast",
+              "ribeye", "chuck", "strip", "t-bone", "porterhouse", "flank",
+              "skirt", "round", "dog", "cat", "pet", "pork", "sirloin tip roast"]
+    rule:
+      exact_cut: ["sirloin"]   # must be a sirloin steak, not another cut
+
+# -----------------------------------------------------------------------------
+# Stores. Each has an adapter. `source` selects how the adapter gets data.
+# The 2026 investigation (see SOURCES.md) found NO store offers a documented,
+# terms-compliant public API for weekly deal items, so paste is the default and
+# primary path for every store. Any store can ALWAYS fall back to paste.
+#   source: paste  -> reads inbox/<id>/ only (manual, always works, compliant)
+#   source: fetch  -> ONE human-initiated fetch of a SPECIFIC flyer artifact you
+#                     put in inbox/<id>/source.url (a direct image/PDF/page URL
+#                     you chose), then runs the same extractor; falls back to
+#                     paste. Do NOT point this at a store's internal endpoints
+#                     or an interactive Flipp flyer widget (canvas/JS, unparseable
+#                     and against terms). Use only for a stable public artifact.
+# tier is informational (A = traditional circular, B = harder / no circular).
+# -----------------------------------------------------------------------------
+stores:
+  - id: shoprite
+    name: "ShopRite"
+    tier: A
+    source: paste
+    enabled: true
+  - id: stop_and_shop
+    name: "Stop & Shop"
+    tier: A
+    source: paste
+    enabled: true
+  - id: big_y
+    name: "Big Y"
+    tier: A
+    source: paste
+    enabled: true
+  - id: aldi
+    name: "Aldi"
+    tier: A
+    source: paste
+    enabled: true
+  - id: walmart
+    name: "Walmart"
+    tier: B
+    source: paste          # no weekly circular at all; paste Rollbacks manually
+    enabled: true
+  - id: fresh_market
+    name: "The Fresh Market"
+    tier: B
+    source: paste          # store-gated "weekly features", no PDF circular
+    enabled: true
+
+# -----------------------------------------------------------------------------
+# Output preferences.
+# -----------------------------------------------------------------------------
+output:
+  site_title: "Weekly Meat Deals"
+  # Currency symbol used in the digest.
+  currency: "$"
+  # Keep this many past weeks browsable in the archive index (0 = keep all).
+  keep_weeks: 0
+  # Where the built site goes (published to GitHub Pages).
+  site_dir: "docs"
+  # Where per-week markdown + json snapshots are archived.
+  archive_dir: "archive"

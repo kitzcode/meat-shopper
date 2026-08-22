@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+
+# Note: docs/ and archive/ ARE tracked on purpose. The weekly Action commits
+# them so the published site and the past-week archive persist in git.

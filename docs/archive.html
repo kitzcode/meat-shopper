@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Meat Deals - all weeks</title><style>
+:root{
+  --bg:#f7f7f5; --card:#ffffff; --ink:#1a1a1a; --muted:#666; --line:#e4e4e0;
+  --accent:#8a1c1c; --good:#1c7a3a; --best-bg:#fff7e6; --best-ink:#8a5a00;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#141414; --card:#1e1e1e; --ink:#ececec; --muted:#9a9a9a;
+    --line:#333; --accent:#ff8a8a; --good:#7ad19a; --best-bg:#2a2410; --best-ink:#e8c877; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 64px}
+.top h1{margin:0 0 4px;font-size:1.9rem}
+.sub{margin:0;font-weight:600;color:var(--accent)}
+.meta{color:var(--muted);font-size:.85rem;margin:.4rem 0 0}
+.meta a,.top a{color:var(--accent)}
+.items{margin-top:24px;display:grid;gap:16px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.item.no-deals{opacity:.72}
+.item h2{margin:0 0 2px;font-size:1.2rem}
+.threshold{margin:0 0 10px;color:var(--muted);font-size:.85rem}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th{text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--muted);border-bottom:1px solid var(--line);padding:6px 8px}
+td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.ppl{font-weight:700;white-space:nowrap;font-size:1.02rem}
+.per{font-weight:400;color:var(--muted);font-size:.8rem}
+.store{white-space:nowrap}
+.basis{color:var(--muted);font-size:.76rem;margin-top:2px}
+.best{background:var(--best-bg);color:var(--best-ink);font-size:.66rem;
+  padding:1px 6px;border-radius:999px;text-transform:uppercase;font-weight:700;letter-spacing:.03em}
+.best-row td{background:var(--best-bg)}
+.none{color:var(--muted);margin:6px 0}
+.block{margin-top:28px;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:16px 18px}
+.block h2{margin:0 0 6px}
+.note{color:var(--muted);font-size:.85rem;margin:0 0 10px}
+.stores tr.bad td{color:var(--muted)}
+footer{margin-top:28px;color:var(--muted);font-size:.8rem}
+
+.arch li{list-style:none;padding:10px 12px;border-bottom:1px solid var(--line)}
+.arch{padding:0;margin:0} .arch .c{color:var(--muted);font-size:.82rem}</style>
+</head><body><main>
+<header class="top"><h1>Weekly Meat Deals</h1>
+<p class="sub">All weeks</p>
+<p class="meta"><a href="index.html">back to latest</a></p></header>
+<section class="block"><ul class="arch"><li><a href="weeks/2026-08-22.html">Week of 2026-08-22</a> <span class="c">19 deal(s)</span></li></ul></section>
+</main></body></html>

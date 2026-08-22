@@ -1,0 +1,8 @@
+# Example flyer paste for Aldi. Delete or replace with your real flyer.
+# valid: 8/20-8/26
+# url: https://www.aldi.us/weekly-specials/
+Fresh Boneless Skinless Chicken Breast $1.99/lb
+Ground Beef 93% Lean $5.99/lb
+Boneless Pork Chops $2.79/lb
+Never Any Boneless Skinless Chicken Thighs $3.79/lb
+Frozen Salmon Fillets $8.49/lb

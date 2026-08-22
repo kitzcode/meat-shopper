@@ -1,0 +1,8 @@
+# OPTIONAL extras for the paste-fallback image/PDF path.
+# Install with: pip install -r requirements-ocr.txt
+# You also need the system Tesseract binary (brew install tesseract) and,
+# for PDF pages, Poppler (brew install poppler). The tool degrades gracefully
+# and tells you if these are missing instead of guessing at prices.
+pytesseract>=0.3.10
+Pillow>=10.0
+pdf2image>=1.17

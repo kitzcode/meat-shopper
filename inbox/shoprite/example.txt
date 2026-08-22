@@ -1,0 +1,10 @@
+# Example flyer paste for ShopRite. Delete or replace with your real flyer.
+# valid: 8/20-8/26
+# url: https://www.shoprite.com/circulars
+Boneless Skinless Chicken Thighs family pack $2.29/lb
+Boneless Skinless Chicken Breast $2.49/lb
+93% Lean Ground Beef $6.99/lb
+Wild Caught Cod Fillet $8.99/lb
+Fresh Atlantic Salmon Fillet $10.99/lb
+Sirloin Steak $9.99/lb
+Chicken Thigh Seasoning Blend $1.99
