@@ -1,5 +1,5 @@
 {
-  "week_label": "2026-08-22",
+  "week_label": "2026-08-23",
   "location_label": "06001",
   "groups": [
     {
@@ -685,6 +685,35 @@
           "threshold_lb": 9.99,
           "status": "qualifying",
           "review_reason": null
+        },
+        {
+          "normalized": {
+            "raw": {
+              "store_id": "fresh_market",
+              "store_name": "The Fresh Market",
+              "title": "Whole Atlantic Salmon Fillet",
+              "price_text": "$8.99 lb",
+              "pack_text": "FRESH, FARM-RAISED, 3.5 LB AVG",
+              "promo_text": "Save at least $5.00 lb",
+              "source_url": "https://www.thefreshmarket.com/features/weekly-features",
+              "valid_from": "",
+              "valid_to": "",
+              "source_kind": "fetch",
+              "raw_line": "Whole Atlantic Salmon Fillet | $8.99 lb | FRESH, FARM-RAISED, 3.5 LB AVG | Save at least $5.00 lb"
+            },
+            "price_per_lb": 8.99,
+            "unit_price": null,
+            "weight_lb": 3.5,
+            "basis": "$8.99/lb as printed",
+            "confident": true,
+            "review_reason": null,
+            "lean_pct": null
+          },
+          "item_key": "salmon",
+          "item_label": "Salmon",
+          "threshold_lb": 9.99,
+          "status": "qualifying",
+          "review_reason": null
         }
       ],
       "over_threshold": [
@@ -997,6 +1026,35 @@
       "threshold_lb": 2.99,
       "status": "review",
       "review_reason": "unit unclear (no weight to convert to $/lb)"
+    },
+    {
+      "normalized": {
+        "raw": {
+          "store_id": "fresh_market",
+          "store_name": "The Fresh Market",
+          "title": "Lean Ground Sirloin",
+          "price_text": "$6.99 lb",
+          "pack_text": "GROUND FRESH DAILY",
+          "promo_text": "Save at least $3.00 lb",
+          "source_url": "https://www.thefreshmarket.com/features/weekly-features",
+          "valid_from": "",
+          "valid_to": "",
+          "source_kind": "fetch",
+          "raw_line": "Lean Ground Sirloin | $6.99 lb | GROUND FRESH DAILY | Save at least $3.00 lb"
+        },
+        "price_per_lb": 6.99,
+        "unit_price": null,
+        "weight_lb": 9.99,
+        "basis": "$6.99/lb as printed",
+        "confident": true,
+        "review_reason": null,
+        "lean_pct": null
+      },
+      "item_key": "ground_beef_93",
+      "item_label": "Ground beef, 93%+ lean",
+      "threshold_lb": 8.49,
+      "status": "review",
+      "review_reason": "lean % not stated (need 93%+)"
     }
   ],
   "store_statuses": [
@@ -1039,9 +1097,9 @@
       "store_id": "fresh_market",
       "store_name": "The Fresh Market",
       "ok": true,
-      "deal_count": 0,
-      "note": "inbox empty; drop a flyer .txt/.json/.png/.pdf here"
+      "deal_count": 30,
+      "note": "inbox empty; drop a flyer .txt/.json/.png/.pdf here; fetched https://www.thefreshmarket.com/features/weekly-features (30 candidates)"
     }
   ],
-  "generated_at": "2026-08-22 22:00 UTC"
+  "generated_at": "2026-08-23 10:54 UTC"
 }

@@ -26,17 +26,14 @@ def _dates(md: MatchedDeal) -> str:
 
 
 def _raw_desc(md: MatchedDeal) -> str:
-    """The as-printed price/pack, so the owner can eyeball the source claim."""
+    """The as-printed name/price/pack, so the owner can eyeball the source claim."""
     r = md.normalized.raw
-    bits = []
     if r.price_text:
-        bits.append(r.price_text)
-    if r.pack_text:
-        bits.append(r.pack_text)
-    if not bits:
-        bits.append(r.title)
-    if r.promo_text:
-        bits.append(r.promo_text)
+        # structured deal: the name and price live in separate fields
+        bits = [r.title, r.price_text, r.pack_text, r.promo_text]
+    else:
+        # free-text deal: the whole line (title) already contains the price
+        bits = [r.title or r.raw_line, r.promo_text]
     return ", ".join(b for b in bits if b)
 
 

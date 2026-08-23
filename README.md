@@ -70,18 +70,20 @@ lean is not stated it goes to Review, never assumed.
 ## Where the deals come from
 
 The 2026 investigation ([SOURCES.md](SOURCES.md)) found that **no store offers a
-documented, terms-compliant public API** for weekly deal items. So the primary
-path for every store is you dropping the flyer into `inbox/`. This is a
-first-class path, not a fallback bolted on.
+documented, terms-compliant public API** for weekly deal items. Paste is the
+first-class path, not a fallback bolted on. A hands-on test of what a plain
+fetch actually returns refined the picture: three stores hard-block bots, one
+only exposes clearance, and one embeds clean JSON that the opt-in fetch mode can
+read.
 
 | Store | Coverage |
 |-------|----------|
-| ShopRite | Paste (Flipp-style widget, no compliant API) |
+| ShopRite | Paste (Flipp-style widget; plain fetch returns 403) |
 | Stop & Shop | Paste (same) |
 | Big Y | Paste (same) |
-| Aldi | Paste (same) |
+| Aldi | Paste (print URL exposes only a clearance rail, not the meat ad) |
 | Walmart | Paste / manual (no circular at all; copy Rollbacks by hand) |
-| The Fresh Market | Paste (store-gated features, no PDF circular) |
+| The Fresh Market | **Auto via opt-in fetch** (embeds structured JSON), or paste |
 
 ### Using paste
 
@@ -104,6 +106,15 @@ to have the tool do a single, human-initiated fetch of that specific public
 flyer artifact (a direct image, PDF, or simple page) and run the same
 extractor. This is deliberately narrow and must not point at store internal
 endpoints or an interactive flyer widget. See [SOURCES.md](SOURCES.md).
+
+**The Fresh Market ships pre-wired this way.** Its weekly-features page embeds
+its specials as structured JSON, so `config.yaml` sets it to `source: fetch`
+with the URL already in `inbox/fresh_market/source.url` and a parser in
+`src/meatshopper/sites.py`. It is best-effort: if their markup changes or the
+fetch is blocked (a datacenter/CI IP may be blocked where your laptop is not),
+that store just reports no deals and you paste instead. The other five stores
+are paste, because three of them (ShopRite, Stop & Shop, Big Y) hard-block bots
+and Aldi's fetchable page is only a clearance rail, not the meat ad.
 
 ## The weekly digest
 
@@ -145,7 +156,8 @@ caught and shown in the "stores this week" section.
 
 ```bash
 python tests/test_normalize.py     # the price-per-pound core
-python tests/test_pipeline.py      # end-to-end against the sample inbox
+python tests/test_sites.py         # the Fresh Market structured parser (offline)
+python tests/test_pipeline.py      # end-to-end against the sample inbox (offline)
 ```
 
 ## Layout
@@ -159,6 +171,7 @@ src/meatshopper/
   rank.py                   threshold filter + cheapest-first ordering
   digest.py                 markdown + HTML output
   adapters/                 pluggable per-store adapters (paste, fetch)
+  sites.py                  structured parsers for fetch mode (Fresh Market)
   build.py                  the pipeline entry point
 docs/                       published site (GitHub Pages)
 archive/                    per-week markdown + json snapshots

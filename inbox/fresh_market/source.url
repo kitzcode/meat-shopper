@@ -1,0 +1,7 @@
+# The Fresh Market weekly features. The tool does ONE fetch of this page and
+# parses its embedded JSON (see src/meatshopper/sites.py). Best-effort and
+# terms-gray: if the markup changes or the fetch is blocked, this store just
+# reports no deals and you can paste a flyer here instead.
+# This page is store-gated; the deals shown are for the store the page defaults
+# to. It works from a home IP; a datacenter/CI IP may get blocked.
+https://www.thefreshmarket.com/features/weekly-features

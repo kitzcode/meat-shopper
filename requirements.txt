@@ -1,2 +1,3 @@
-# Core dependency (required). Free, no paid APIs.
+# Core dependencies (required). Free, no paid APIs.
 PyYAML>=6.0
+certifi>=2024.2.2   # CA bundle so HTTPS fetch works on macOS Python too

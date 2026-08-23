@@ -6,20 +6,39 @@ list. Bottom line up front:
 
 **None of the six stores offers a documented, terms-compliant public API for
 reading weekly circular deal items.** So the tool uses owner-driven paste/upload
-as the primary path for every store, and treats any automated fetch as an
-optional bonus that must never be a hard dependency. That is why `config.yaml`
-ships every store as `source: paste`.
+as the primary path, and treats any automated fetch as an optional bonus that
+must never be a hard dependency.
+
+A follow-up hands-on test (2026-08-23) of what a plain, non-browser fetch
+actually returns refined this:
+
+- ShopRite, Stop & Shop, Big Y: return **HTTP 403** to any non-browser request
+  (anti-bot wall). Getting deals out would require evading that block, which
+  this project will not do. They stay paste-only.
+- Aldi's "print" flyer URL returns 200, but the server-rendered content is only
+  a small "Price Drops" clearance rail (a handful of random markdowns), not the
+  weekly meat ad, which loads client-side from Instacart. So there is no clean,
+  reliable meat data to parse there. Aldi stays paste-only.
+- The Fresh Market's weekly-features page returns 200 and **embeds its specials
+  as structured JSON** (Next.js `__NEXT_DATA__`) with clean name/price/size
+  fields. This one is wired to the opt-in `fetch` mode (`config.yaml` sets
+  `fresh_market: source: fetch`, URL in `inbox/fresh_market/source.url`, parser
+  in `src/meatshopper/sites.py`). It is best-effort and terms-gray: if the
+  markup changes or the fetch is blocked it simply reports no deals, and you can
+  paste instead. A datacenter/CI IP may be blocked where a home IP is not.
+
+Every other store ships as `source: paste`.
 
 ## Per-store coverage
 
 | Store | Realistic data path | Why | Terms caveat |
 |-------|--------------------|-----|--------------|
-| ShopRite | Paste-only | Circular is published online through a Flipp/Wishabi-style interactive flyer widget. No official public data API. | Programmatic pulls would hit undocumented Flipp endpoints, against Flipp's terms. |
-| Stop & Shop | Paste-only | Same pattern: weekly circular online via a flyer widget, no documented feed. | Same Flipp caveat. |
-| Big Y | Paste-only | Weekly flyer published online (current plus next week), no documented public API. | Same Flipp caveat. |
-| Aldi | Paste-only | Aldi publishes a weekly ad on its own site, often mirrored by aggregators. No documented public API. | Flipp caveat plus Aldi's own site terms restrict automated access. |
-| Walmart | Paste-only / manual | No traditional weekly circular at all. Deals show up as Rollbacks/Clearance on a digital, store-personalized page. Official walmart.io affiliate/content APIs are approval-gated, catalog-oriented, and not a circular feed. | Walmart's terms explicitly ban robots, spiders, scraping, data-mining, and AI-training use without written consent. |
-| The Fresh Market | Paste-only / partially unavailable | No PDF circular. "Weekly Features" pages render a small, store-selected set dynamically. Not a classic circular and not prominently on Flipp. | Site terms restrict automated access; content is JS-rendered and store-gated. |
+| ShopRite | Paste-only | Flipp/Wishabi-style flyer widget; a plain fetch returns HTTP 403 (anti-bot). No official public data API. | Programmatic pulls would hit undocumented Flipp endpoints or require evading the 403, against terms. |
+| Stop & Shop | Paste-only | Same pattern; plain fetch returns HTTP 403. | Same. |
+| Big Y | Paste-only | Same pattern; plain fetch returns HTTP 403. | Same. |
+| Aldi | Paste-only | The "print" flyer URL returns 200 but server-renders only a small clearance rail; the weekly meat ad loads client-side from Instacart. No clean meat data to parse. | Aldi's site terms restrict automated access. |
+| Walmart | Paste-only / manual | No traditional weekly circular at all. Deals show up as Rollbacks/Clearance on a digital, store-personalized page. Official walmart.io APIs are approval-gated, catalog-oriented, not a circular feed. | Walmart's terms explicitly ban robots, spiders, scraping, data-mining, and AI-training use without written consent. |
+| The Fresh Market | **Automated via opt-in fetch** (or paste) | Weekly-features page returns 200 and embeds specials as structured JSON (`__NEXT_DATA__`) with clean name/price/size. Parsed by `sites.py` under `source: fetch`. | Site terms restrict automated access; treated as the owner's personal single fetch of a page they chose. Best-effort, may break or be IP-blocked. |
 
 Note on "Flipp-powered": the pattern (Northeast grocery circulars served through
 Wishabi/Flipp-style flyer widgets) is an observation, not a documented

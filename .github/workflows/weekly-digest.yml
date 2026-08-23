@@ -40,7 +40,10 @@ jobs:
           pip install -e ".[ocr]"
 
       - name: Run tests
-        run: python tests/test_normalize.py && python tests/test_pipeline.py
+        run: |
+          python tests/test_normalize.py
+          python tests/test_sites.py
+          python tests/test_pipeline.py
 
       - name: Build digest
         run: meat-shopper --config config/config.yaml --inbox inbox

@@ -12,11 +12,28 @@ folder are also read, so fetch augments rather than replaces the paste path.
 """
 from __future__ import annotations
 
+import os
+import ssl
 import tempfile
 import urllib.request
 from pathlib import Path
 
+
+def _ssl_context() -> ssl.SSLContext:
+    """A verifying SSL context that works on macOS too.
+
+    Python installers on macOS often ship without the system CA store wired up,
+    which makes urllib raise CERTIFICATE_VERIFY_FAILED even though the fetch is
+    fine. Use certifi's CA bundle when available; fall back to the default.
+    """
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        return ssl.create_default_context()
+
 from ..extract import extract_file, parse_text, ExtractionSkipped
+from ..sites import SITE_PARSERS
 from .paste import PasteAdapter
 from .base import AdapterResult
 
@@ -37,6 +54,12 @@ class FetchAdapter(PasteAdapter):
     def fetch(self) -> AdapterResult:
         # Start from whatever is pasted in the folder.
         result = super().fetch()
+
+        # Offline mode (tests, or a no-network run): behave as paste-only.
+        if os.environ.get("MEATSHOPPER_OFFLINE"):
+            note = "offline mode; skipped fetch, paste only"
+            result.note = (result.note + "; " + note) if result.note else note
+            return result
 
         url_file = self.inbox_dir / "source.url"
         if not url_file.exists():
@@ -67,14 +90,27 @@ class FetchAdapter(PasteAdapter):
 
     def _fetch_url(self, url: str):
         req = urllib.request.Request(url, headers={"User-Agent": _UA})
-        with urllib.request.urlopen(req, timeout=_TIMEOUT) as resp:  # noqa: S310
+        ctx = _ssl_context()
+        with urllib.request.urlopen(req, timeout=_TIMEOUT, context=ctx) as resp:  # noqa: S310
             ctype = (resp.headers.get("Content-Type") or "").lower()
             body = resp.read()
 
         if "text/html" in ctype or "text/plain" in ctype:
-            text = body.decode("utf-8", errors="replace")
-            if "text/html" in ctype:
-                text = _strip_html(text)
+            raw = body.decode("utf-8", errors="replace")
+
+            # If this store has a structured site parser (e.g. Fresh Market's
+            # embedded JSON), try it on the RAW html first. It gives clean
+            # name/price/size tuples. Fall back to generic text extraction only
+            # if it yields nothing (markup changed, or wrong page).
+            parser = SITE_PARSERS.get(self.store.id)
+            if parser and "text/html" in ctype:
+                deals = parser(raw, self.store.id, self.store.name, url)
+                if deals:
+                    for d in deals:
+                        d.source_url = d.source_url or url
+                    return deals
+
+            text = _strip_html(raw) if "text/html" in ctype else raw
             deals = parse_text(text, self.store.id, self.store.name, "fetch")
             for d in deals:
                 d.source_url = d.source_url or url

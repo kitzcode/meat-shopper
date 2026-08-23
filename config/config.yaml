@@ -139,7 +139,7 @@ stores:
   - id: fresh_market
     name: "The Fresh Market"
     tier: B
-    source: paste          # store-gated "weekly features", no PDF circular
+    source: fetch          # weekly features JSON is fetchable; see inbox/fresh_market/source.url
     enabled: true
 
 # -----------------------------------------------------------------------------

@@ -3,8 +3,12 @@
 Confirms the pieces fit together and, crucially, that the anti-fabrication and
 matching rules hold on realistic input.
 """
+import os
 import sys
 from pathlib import Path
+
+# Keep this test offline and deterministic: fetch-mode stores behave as paste.
+os.environ["MEATSHOPPER_OFFLINE"] = "1"
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
